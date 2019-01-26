@@ -1,0 +1,190 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    width: 25%;
+    border-right: 2px solid black;
+    background-color: #faf5f5;
+    position: fixed;
+    height: 100vh;
+}
+
+.main {
+    box-sizing: border-box;
+    width: 74.9%;
+    background-color: #DEE4E7;
+    padding: 100px;
+    position: relative;
+    left: 25.1%;
+}
+
+.header-heading {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.7em;
+    border-bottom: 2px solid black;
+}
+
+.header-heading h2 {
+    font-size: 1.6em;
+}
+
+.header-heading, .nav ul li {
+    padding: 20px 0;
+}
+
+.nav ul li {
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #0c0b0b;
+    font-size: 1.6em;
+}
+
+.main-section {
+    margin-bottom: 40px;
+}
+
+.main-section h3 {
+    font-size: 1.5em;
+    display: inline-block;
+}
+
+.main-section h3::after {
+    content: '';
+    position: relative;
+    display: inline-block;
+    bottom: 10px;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+}
+
+.main-section h4 {
+    font-size: 1.4em;
+    color: #251f1f;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    margin: 10px 0;
+}
+
+.main-section img {
+    display: block;
+    max-height: 300px;
+    margin: 25px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ol {
+    list-style-type: decimal;
+    margin: 20px 0 0 25px;
+}
+
+.main-section ol li {
+    font-size: 1.3em;
+    margin: 20px 0;
+}
+
+.main-section ul li {
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+
+.main-section .ul-charging li::before {
+    content: "\2022";
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    font-size: 2em;
+    position: relative;
+    top: 7px;
+}
+
+.main-section ul .first-li::before {
+    color: blue;
+}
+
+.main-section ul .second-li::before {
+    color: green;
+}
+
+.main-section ul .third-li::before {
+    color: yellow;
+}
+
+.main-section ul .fourth-li::before {
+    color: red;
+}
+
+.main-section .ul-commands li::before {
+    content: "\2022";
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    font-size: 1.5em;
+    position: relative;
+    top: 7px;
+}
+
+.fa-bluetooth {
+    color: #3090C7;
+}
+
+/* Media Query */
+
+@media (max-width: 960px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .header {
+        width: 100%;
+        height: auto;
+        position: static;
+        box-sizing: border-box;
+    }
+
+    .main {
+        width: 100%;
+        padding: 50px 30px;
+        position: static;
+    }
+
+    .header-heading {
+        font-size: 1.5em;
+    }
+
+    .header-heading, ul li {
+        padding: 12px 0;
+    }
+
+    .nav ul li {
+        display: block;
+        padding: 20px 0;
+    }
+
+    .nav ul li a {
+        font-size: 1.3em;
+    }
+
+    .main-section p {
+        text-align: justify;
+    }
+
+    .main-section img {
+        max-width: 100%;
+        height: auto;
+    }
+}
